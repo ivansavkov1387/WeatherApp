@@ -9,7 +9,6 @@ import UIKit
 
 class MyCitiesCell: UITableViewCell {
     
-    
     @IBOutlet weak var cityName: UILabel!
     
     override func awakeFromNib() {

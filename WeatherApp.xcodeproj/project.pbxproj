@@ -53,7 +53,6 @@
 			isa = PBXGroup;
 			children = (
 				B41A7935274577F0008D47C3 /* LoginFormController.swift */,
-				B446D1232750F158004E8A6D /* Weather */,
 				B41A791E274577A2008D47C3 /* WeatherApp */,
 				B41A791D274577A2008D47C3 /* Products */,
 			);
@@ -70,6 +69,7 @@
 		B41A791E274577A2008D47C3 /* WeatherApp */ = {
 			isa = PBXGroup;
 			children = (
+				B446D1232750F158004E8A6D /* Weather */,
 				B446D117274EB02F004E8A6D /* MyCities */,
 				B446D110274EA9A8004E8A6D /* AllCities */,
 				B41A791F274577A2008D47C3 /* AppDelegate.swift */,

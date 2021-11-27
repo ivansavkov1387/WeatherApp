@@ -131,6 +131,7 @@
                                 </tableViewCellContentView>
                                 <connections>
                                     <outlet property="cityName" destination="kGC-2u-5Fk" id="1eq-YV-eTX"/>
+                                    <segue destination="7Hm-Za-fzx" kind="show" id="kQY-BI-nPx"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -152,64 +153,64 @@
             <point key="canvasLocation" x="1896.8" y="77.811094452773617"/>
         </scene>
         <!--Weather View Controller-->
-        <scene sceneID="9jU-e8-uhZ">
+        <scene sceneID="fUi-ZK-Ia0">
             <objects>
-                <collectionViewController id="03y-Uv-EIb" customClass="WeatherViewController" customModule="WeatherApp" customModuleProvider="target" sceneMemberID="viewController">
-                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="YUK-IX-hfj">
+                <collectionViewController restorationIdentifier="WeatherViewController" storyboardIdentifier="WeatherViewController" id="7Hm-Za-fzx" customClass="WeatherViewController" customModule="WeatherApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="Ror-hF-lH7">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="NGH-UD-nxH">
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Uwl-9h-ScW">
                             <size key="itemSize" width="150" height="150"/>
                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                         </collectionViewFlowLayout>
                         <cells>
-                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="WeatherCell" id="8yF-lx-BCY" customClass="WeatherCell" customModule="WeatherApp" customModuleProvider="target">
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="WeatherCell" id="4B7-P3-TM3" customClass="WeatherCell" customModule="WeatherApp" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="kpC-G9-sAg">
+                                <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="Fky-uu-hiU">
                                     <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fFM-w3-zxn">
-                                            <rect key="frame" x="54" y="8" width="42" height="21"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Co6-5W-g81">
+                                            <rect key="frame" x="8" y="121" width="134" height="21"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5uX-ef-0fX">
-                                            <rect key="frame" x="54" y="121" width="42" height="21"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <nil key="textColor"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3g7-pf-qhC">
-                                            <rect key="frame" x="21" y="37" width="108" height="76"/>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="sun.max.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="yMS-5G-7mm">
+                                            <rect key="frame" x="19" y="33.5" width="112" height="82"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1X1-gk-L6P">
+                                            <rect key="frame" x="8" y="8" width="134" height="21"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
                                     </subviews>
                                 </collectionViewCellContentView>
-                                <size key="customSize" width="150" height="150"/>
                                 <connections>
-                                    <outlet property="icon" destination="3g7-pf-qhC" id="GLc-ly-bgU"/>
-                                    <outlet property="time" destination="5uX-ef-0fX" id="3sU-gV-vrT"/>
-                                    <outlet property="weather" destination="fFM-w3-zxn" id="hcl-iE-abm"/>
+                                    <outlet property="icon" destination="yMS-5G-7mm" id="wPB-Xm-Me5"/>
+                                    <outlet property="time" destination="Co6-5W-g81" id="kxw-A4-yKr"/>
+                                    <outlet property="weather" destination="1X1-gk-L6P" id="b31-pP-rS0"/>
                                 </connections>
                             </collectionViewCell>
                         </cells>
                         <connections>
-                            <outlet property="dataSource" destination="03y-Uv-EIb" id="GnS-fy-4V5"/>
-                            <outlet property="delegate" destination="03y-Uv-EIb" id="5KR-rs-eTs"/>
+                            <outlet property="dataSource" destination="7Hm-Za-fzx" id="eau-Nm-tpu"/>
+                            <outlet property="delegate" destination="7Hm-Za-fzx" id="H7D-I4-YnG"/>
                         </connections>
                     </collectionView>
+                    <navigationItem key="navigationItem" id="hPm-E6-Qqv"/>
                 </collectionViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="UvL-IL-VSU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="og6-zq-wdR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2765.5999999999999" y="77.811094452773617"/>
+            <point key="canvasLocation" x="2728.8000000000002" y="77.811094452773617"/>
         </scene>
         <!--All Cities View Controller-->
         <scene sceneID="OUA-tY-a1y">
@@ -220,7 +221,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="cityCell" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cityCell" id="vkj-ft-eek" customClass="AllCitiesCell" customModule="WeatherApp" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="cityCell" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="AllCitiesCell" id="vkj-ft-eek" customClass="AllCitiesCell" customModule="WeatherApp" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="375" height="43.5"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="vkj-ft-eek" id="jnI-SJ-Nrr">
@@ -274,6 +275,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="sun.max.fill" catalog="system" width="128" height="124"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
